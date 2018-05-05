@@ -10,6 +10,12 @@ import UIKit
 
 class MainViewCell: UITableViewCell {
 
+    @IBOutlet var viewImage: UIImageView!
+    
+    func addVideoInfo(link : String){
+         self.viewImage!.kf.setImage(with: URL(string: link))
+    }
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

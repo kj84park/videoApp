@@ -1,20 +1,32 @@
 PODS:
+  - Kingfisher (4.7.0)
+  - ObjcExceptionBridging (1.0.1):
+    - ObjcExceptionBridging/ObjcExceptionBridging (= 1.0.1)
+  - ObjcExceptionBridging/ObjcExceptionBridging (1.0.1)
+  - XCGLogger (6.0.2):
+    - XCGLogger/Core (= 6.0.2)
+  - XCGLogger/Core (6.0.2):
+    - ObjcExceptionBridging
   - youtube-ios-player-helper (0.1.6)
-  - YouTubeFloatingPlayer (2.0.1):
-    - youtube-ios-player-helper
 
 DEPENDENCIES:
-  - YouTubeFloatingPlayer
+  - Kingfisher (~> 4.0)
+  - XCGLogger (~> 6.0.2)
+  - youtube-ios-player-helper (~> 0.1.4)
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
+    - Kingfisher
+    - ObjcExceptionBridging
+    - XCGLogger
     - youtube-ios-player-helper
-    - YouTubeFloatingPlayer
 
 SPEC CHECKSUMS:
+  Kingfisher: da6b005aa96d37698e3e4f1ccfe96a5b9bbf27d6
+  ObjcExceptionBridging: c30e00eb3700467e695faeea30e26e18bd445001
+  XCGLogger: c9601cae9a8912de34a58666ba931ed3d624dd31
   youtube-ios-player-helper: 21ab92db027c7ff86cb17a3843a3f6eafc8158d2
-  YouTubeFloatingPlayer: c1038d5a827a57f80bfbb36209828e2a872113a5
 
-PODFILE CHECKSUM: 4faf09ecf799a6a2005a5741709836e43e5763d6
+PODFILE CHECKSUM: 687a3479fbb96bdfafdc4248d7c8f6046d28f53a
 
 COCOAPODS: 1.5.0

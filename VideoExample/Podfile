@@ -1,8 +1,10 @@
-# Uncomment the next line to define a global platform for your project
- platform :ios, '9.0'
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '9.0'
 use_frameworks!
 
 target 'VideoExample' do
-pod 'YouTubeFloatingPlayer'
-
+    pod 'youtube-ios-player-helper', '~> 0.1.4'
+    pod 'XCGLogger', '~> 6.0.2'
+    pod 'Kingfisher', '~> 4.0'
+    use_frameworks!
 end

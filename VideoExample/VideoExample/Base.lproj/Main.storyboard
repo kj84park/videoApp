@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -20,37 +19,42 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="videoCell" rowHeight="145" id="P2d-d1-svZ" customClass="MainViewCell" customModule="VideoExample" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="375" height="145"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="videoCell" rowHeight="150" id="P2d-d1-svZ" customClass="MainViewCell" customModule="VideoExample" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="150"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="P2d-d1-svZ" id="kAo-lo-OOI">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="144.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="149.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="PnA-H6-x9z">
-                                            <rect key="frame" x="10" y="5" width="149" height="135"/>
+                                            <rect key="frame" x="5" y="5" width="159.5" height="139.5"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="139.5" id="lbP-la-i5E"/>
+                                                <constraint firstAttribute="width" constant="159.5" id="t2v-Np-ase"/>
+                                            </constraints>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Video : Blabla" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C1O-0T-JhD">
-                                            <rect key="frame" x="169" y="63" width="104" height="21"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="dfsdfdasfasfsadfasdfdsfsdafsadfsafasdfsadfsdaf" textAlignment="center" lineBreakMode="clip" numberOfLines="3" baselineAdjustment="none" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="C1O-0T-JhD">
+                                            <rect key="frame" x="174.5" y="5" width="195.5" height="139.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="C1O-0T-JhD" firstAttribute="top" secondItem="kAo-lo-OOI" secondAttribute="topMargin" constant="52" id="18X-re-Lj2"/>
-                                        <constraint firstItem="C1O-0T-JhD" firstAttribute="leading" secondItem="PnA-H6-x9z" secondAttribute="trailing" constant="10" id="HTq-7k-zKA"/>
-                                        <constraint firstItem="PnA-H6-x9z" firstAttribute="top" secondItem="kAo-lo-OOI" secondAttribute="topMargin" constant="-6" id="J0I-Pf-NU5"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="C1O-0T-JhD" secondAttribute="trailing" constant="86" id="QAm-jM-QcY"/>
-                                        <constraint firstItem="PnA-H6-x9z" firstAttribute="centerY" secondItem="kAo-lo-OOI" secondAttribute="centerY" id="WSv-8R-eaE"/>
-                                        <constraint firstAttribute="bottomMargin" secondItem="C1O-0T-JhD" secondAttribute="bottom" constant="50" id="gmR-8b-KWy"/>
-                                        <constraint firstItem="PnA-H6-x9z" firstAttribute="leading" secondItem="kAo-lo-OOI" secondAttribute="leadingMargin" constant="-6" id="wl1-Mg-8h0"/>
+                                        <constraint firstItem="PnA-H6-x9z" firstAttribute="leading" secondItem="kAo-lo-OOI" secondAttribute="leading" constant="5" id="IK5-d2-fWC"/>
+                                        <constraint firstAttribute="bottom" secondItem="PnA-H6-x9z" secondAttribute="bottom" constant="5" id="MLh-4K-Txx"/>
+                                        <constraint firstItem="C1O-0T-JhD" firstAttribute="top" secondItem="kAo-lo-OOI" secondAttribute="top" constant="5" id="N2z-qV-VzP"/>
+                                        <constraint firstAttribute="bottom" secondItem="C1O-0T-JhD" secondAttribute="bottom" constant="5" id="Yn6-Ug-riE"/>
+                                        <constraint firstAttribute="trailing" secondItem="C1O-0T-JhD" secondAttribute="trailing" constant="5" id="aDO-CD-YHn"/>
+                                        <constraint firstItem="C1O-0T-JhD" firstAttribute="leading" secondItem="PnA-H6-x9z" secondAttribute="trailing" constant="10" id="eXL-lz-8SY"/>
+                                        <constraint firstItem="PnA-H6-x9z" firstAttribute="top" secondItem="kAo-lo-OOI" secondAttribute="top" constant="5" id="vM9-4a-RHs"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="imageView" destination="PnA-H6-x9z" id="Nm1-qB-xxf"/>
                                     <outlet property="viewImage" destination="PnA-H6-x9z" id="ySC-Zc-AH0"/>
-                                    <segue destination="fjN-eE-gTp" kind="show" id="Qiq-Ql-mjI"/>
+                                    <outlet property="viewTitle" destination="C1O-0T-JhD" id="ucf-fq-Zw3"/>
+                                    <segue destination="fjN-eE-gTp" kind="show" identifier="videoDetail" id="Qiq-Ql-mjI"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>

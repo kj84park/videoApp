@@ -12,10 +12,12 @@ import youtube_ios_player_helper
 class VideoPlayerViewController: UIViewController {
 
     @IBOutlet var playerView: YTPlayerView!
+    var videoLink : String?
+    var videoTitle : String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.playerView.load(withVideoId: "M7lc1UVf-VE")
+        self.playerView.load(withVideoId: videoLink!)
 
         // Do any additional setup after loading the view.
     }

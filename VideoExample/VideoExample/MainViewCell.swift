@@ -17,6 +17,13 @@ class MainViewCell: UITableViewCell {
         super.awakeFromNib()
         // Initialization code
     }
+    
+    func setConfigure(imageLink : String , title : String){
+        self.imageView?.kf.setImage(with: URL(string: imageLink), placeholder: nil, options: nil, progressBlock: nil, completionHandler: { (image, error, cacheType, URL) in
+            self.setNeedsLayout()
+        })
+        self.viewTitle.text = title
+    }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)

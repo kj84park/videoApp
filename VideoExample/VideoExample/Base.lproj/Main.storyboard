@@ -26,28 +26,31 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="149.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="PnA-H6-x9z">
-                                            <rect key="frame" x="5" y="5" width="159.5" height="139.5"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="139.5" id="lbP-la-i5E"/>
-                                                <constraint firstAttribute="width" constant="159.5" id="t2v-Np-ase"/>
-                                            </constraints>
-                                        </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="dfsdfdasfasfsadfasdfdsfsdafsadfsafasdfsadfsdaf" textAlignment="center" lineBreakMode="clip" numberOfLines="3" baselineAdjustment="none" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="C1O-0T-JhD">
-                                            <rect key="frame" x="174.5" y="5" width="195.5" height="139.5"/>
+                                            <rect key="frame" x="204" y="0.0" width="168.5" height="150"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="PnA-H6-x9z">
+                                            <rect key="frame" x="0.0" y="0.0" width="159.5" height="149.5"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="150" id="D00-Bc-BZ5"/>
+                                                <constraint firstAttribute="width" constant="159.5" id="iuk-MT-BOg"/>
+                                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="149.5" id="l8O-dL-Dnt"/>
+                                            </constraints>
+                                        </imageView>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="PnA-H6-x9z" firstAttribute="leading" secondItem="kAo-lo-OOI" secondAttribute="leading" constant="5" id="IK5-d2-fWC"/>
-                                        <constraint firstAttribute="bottom" secondItem="PnA-H6-x9z" secondAttribute="bottom" constant="5" id="MLh-4K-Txx"/>
-                                        <constraint firstItem="C1O-0T-JhD" firstAttribute="top" secondItem="kAo-lo-OOI" secondAttribute="top" constant="5" id="N2z-qV-VzP"/>
-                                        <constraint firstAttribute="bottom" secondItem="C1O-0T-JhD" secondAttribute="bottom" constant="5" id="Yn6-Ug-riE"/>
-                                        <constraint firstAttribute="trailing" secondItem="C1O-0T-JhD" secondAttribute="trailing" constant="5" id="aDO-CD-YHn"/>
-                                        <constraint firstItem="C1O-0T-JhD" firstAttribute="leading" secondItem="PnA-H6-x9z" secondAttribute="trailing" constant="10" id="eXL-lz-8SY"/>
-                                        <constraint firstItem="PnA-H6-x9z" firstAttribute="top" secondItem="kAo-lo-OOI" secondAttribute="top" constant="5" id="vM9-4a-RHs"/>
+                                        <constraint firstItem="PnA-H6-x9z" firstAttribute="leading" secondItem="kAo-lo-OOI" secondAttribute="leading" id="12L-Ic-PM7"/>
+                                        <constraint firstItem="C1O-0T-JhD" firstAttribute="top" secondItem="kAo-lo-OOI" secondAttribute="top" id="GAv-0S-MtR"/>
+                                        <constraint firstItem="PnA-H6-x9z" firstAttribute="leading" secondItem="kAo-lo-OOI" secondAttribute="leading" id="JO3-YF-bmD"/>
+                                        <constraint firstAttribute="bottom" secondItem="C1O-0T-JhD" secondAttribute="bottom" id="Rpk-Vr-0HN"/>
+                                        <constraint firstItem="PnA-H6-x9z" firstAttribute="top" secondItem="kAo-lo-OOI" secondAttribute="top" id="dN7-bq-rig"/>
+                                        <constraint firstAttribute="trailing" secondItem="PnA-H6-x9z" secondAttribute="trailing" constant="215.5" id="gdZ-zR-yML"/>
+                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="C1O-0T-JhD" secondAttribute="trailing" id="l6I-UQ-EYN"/>
+                                        <constraint firstAttribute="bottom" secondItem="PnA-H6-x9z" secondAttribute="bottom" id="pls-5d-xhh"/>
+                                        <constraint firstItem="C1O-0T-JhD" firstAttribute="leading" secondItem="kAo-lo-OOI" secondAttribute="leading" constant="204" id="rGj-za-b2g"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
